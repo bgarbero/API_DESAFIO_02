@@ -2,13 +2,32 @@ package com.example.apicrud.model;
 
 import java.util.Date;
 
-public class produto {
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Produto {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String descricao;
-    private String marca;
+
+    @Column(nullable = false)
+    private String categoria;
+
+    @Column(nullable = false)
     private Date dataDeValidade;
+
+    @Column(nullable = false)
     private double valor;
 
+    
     public Long getId() {
         return id;
     }
@@ -25,12 +44,12 @@ public class produto {
         this.descricao = descricao;
     }
 
-    public String getMarca() {
-        return marca;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public Date getDataDeValidade() {
