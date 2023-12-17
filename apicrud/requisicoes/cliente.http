@@ -1,0 +1,31 @@
+GET HTTP://localhost:8080/apicrud/clientes
+
+###
+
+GET HTTP://localhost:8080/apicrud/clientes/1
+
+###
+
+POST HTTP://localhost:8080/apicrud/clientes
+Content-Type: application/json
+
+{
+    "descricao": "Leci",
+    "endereco": "Apartamento",
+    "telefone": "992049499"
+}
+
+###
+
+PUT HTTP://localhost:8080/apicrud/clientes/1
+Content-Type: application/json
+
+{
+    "descricao": "Bruno da Silva",
+    "endereco": "Casa",
+    "telefone": "24525777"
+}
+
+###
+
+DELETE HTTP://localhost:8080/apicrud/clientes/1
