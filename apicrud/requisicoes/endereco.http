@@ -1,0 +1,43 @@
+GET HTTP://localhost:8080/apicrud/enderecos
+
+###
+
+GET HTTP://localhost:8080/apicrud/enderecos/2
+
+###
+
+POST HTTP://localhost:8080/apicrud/enderecos
+Content-Type: application/json
+
+{
+    "bairro": "Benfica",
+    "cep": "27600000",
+    "cidade": "Valença",
+    "cliente": "Cintia",
+    "complemento": "Casa 2",
+    "descricao": "Casa",
+    "estado": "RJ",
+    "numero": "99",
+    "rua": "Américo Pereira"
+}
+
+###
+
+PUT HTTP://localhost:8080/apicrud/enderecos/1
+Content-Type: application/json
+
+{
+    "bairro": "Benfica",
+    "cep": "27600000",
+    "cidade": "Valença",
+    "cliente": "Bruno da Silva",
+    "complemento": "Nenhum",
+    "descricao": "Casa",
+    "estado": "RJ",
+    "numero": "99",
+    "rua": "Américo Pereira"
+}
+
+###
+
+DELETE HTTP://localhost:8080/apicrud/enderecos/5

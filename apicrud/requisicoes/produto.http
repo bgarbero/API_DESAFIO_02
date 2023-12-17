@@ -1,0 +1,33 @@
+GET HTTP://localhost:8080/apicrud/produtos
+
+###
+
+GET HTTP://localhost:8080/apicrud/produtos/2
+
+###
+
+POST HTTP://localhost:8080/apicrud/produtos
+Content-Type: application/json
+
+{
+    "categoria": "Fármaco",
+    "data_de_validade": "2023-12-18T00:00:00",
+    "descricao": "Dipirona",
+    "valor": 13.50
+}
+
+###
+
+PUT HTTP://localhost:8080/apicrud/produtos/1
+Content-Type: application/json
+
+{
+    "categoria": "Fármaco",
+    "data_de_validade": "2023-12-25T00:00:00",
+    "descricao": "Dipirona",
+    "valor": 13.50
+}
+
+###
+
+DELETE HTTP://localhost:8080/apicrud/produtos/1
