@@ -11,21 +11,21 @@ Content-Type: application/json
 
 {
     "categoria": "Fármaco",
-    "data_de_validade": "2023-12-18T00:00:00",
-    "descricao": "Dipirona",
+    "dataDeValidade": "2023-12-18T00:00:00",
+    "descricao": "Dorflex",
     "valor": 13.50
 }
 
 ###
 
-PUT HTTP://localhost:8080/apicrud/produtos/1
+PUT HTTP://localhost:8080/apicrud/produtos/2
 Content-Type: application/json
 
 {
     "categoria": "Fármaco",
-    "data_de_validade": "2023-12-25T00:00:00",
-    "descricao": "Dipirona",
-    "valor": 13.50
+    "dataDeValidade": "2023-12-25T00:00:00",
+    "descricao": "Dorflex",
+    "valor": 15.50
 }
 
 ###
