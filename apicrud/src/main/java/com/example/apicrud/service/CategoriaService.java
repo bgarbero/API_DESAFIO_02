@@ -35,4 +35,14 @@ public class CategoriaService {
 
         return optCategoria.get();
     }
+
+    public Categoria atualizar(Long id, Categoria categoria){
+
+        categoria.setId(id);
+        return categoriaRepository.save(categoria);
+    }
+
+    public void deletar(Long id){
+        categoriaRepository.deleteById(id);
+    }
 }

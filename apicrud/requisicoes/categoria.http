@@ -1,0 +1,27 @@
+GET HTTP://localhost:8080/apicrud/categorias
+
+###
+
+GET HTTP://localhost:8080/apicrud/categorias/2
+
+###
+
+POST HTTP://localhost:8080/apicrud/categorias
+Content-Type: application/json
+
+{
+    "descricao": "Fármacos"
+}
+
+###
+
+PUT HTTP://localhost:8080/apicrud/categorias/2
+Content-Type: application/json
+
+{
+    "descricao": "Limpeza"
+}
+
+###
+
+DELETE HTTP://localhost:8080/apicrud/categorias/1
