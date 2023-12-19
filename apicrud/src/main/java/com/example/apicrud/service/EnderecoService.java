@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.apicrud.model.Endereco;
+import com.example.apicrud.model.exception.ResourceNotFoundException;
 import com.example.apicrud.repository.EnderecoRepository;
 
 @Service
@@ -30,7 +31,7 @@ public class EnderecoService {
         Optional<Endereco> optEndereco = enderecoRepository.findById(id);
 
         if(optEndereco.isEmpty()){
-            throw new IllegalArgumentException("Não existe um endereço com o ID" + id);
+            throw new ResourceNotFoundException("Não existe um endereço com o ID " + id);
         }
 
         return optEndereco.get();

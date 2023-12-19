@@ -2,7 +2,7 @@ GET HTTP://localhost:8080/apicrud/categorias
 
 ###
 
-GET HTTP://localhost:8080/apicrud/categorias/2
+GET HTTP://localhost:8080/apicrud/categorias/3
 
 ###
 

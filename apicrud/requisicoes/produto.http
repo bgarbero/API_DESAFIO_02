@@ -2,7 +2,7 @@ GET HTTP://localhost:8080/apicrud/produtos
 
 ###
 
-GET HTTP://localhost:8080/apicrud/produtos/2
+GET HTTP://localhost:8080/apicrud/produtos/3
 
 ###
 
@@ -10,9 +10,9 @@ POST HTTP://localhost:8080/apicrud/produtos
 Content-Type: application/json
 
 {
-    "categoria": "Fármaco",
+    "categoria": "Alimento",
     "dataDeValidade": "2023-12-18T00:00:00",
-    "descricao": "Dorflex",
+    "descricao": "Arroz",
     "valor": 13.50
 }
 
@@ -23,7 +23,7 @@ Content-Type: application/json
 
 {
     "categoria": "Fármaco",
-    "dataDeValidade": "2023-12-25T00:00:00",
+    "dataDeValidade": "2023-12-18T00:00:00",
     "descricao": "Dorflex",
     "valor": 15.50
 }
