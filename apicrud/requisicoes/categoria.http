@@ -10,16 +10,22 @@ POST HTTP://localhost:8080/apicrud/categorias
 Content-Type: application/json
 
 {
-    "descricao": "Fármacos"
+    "descricao": "Alimento",
+    "produto": {
+        "id": 3
+    }
 }
 
 ###
 
-PUT HTTP://localhost:8080/apicrud/categorias/2
+PUT HTTP://localhost:8080/apicrud/categorias/1
 Content-Type: application/json
 
 {
-    "descricao": "Limpeza"
+    "descricao": "alimento",
+    "produto": {
+        "id": 1
+    }
 }
 
 ###

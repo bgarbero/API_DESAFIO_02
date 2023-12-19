@@ -10,24 +10,22 @@ POST HTTP://localhost:8080/apicrud/produtos
 Content-Type: application/json
 
 {
-    "categoria": "Alimento",
-    "dataDeValidade": "2023-12-18T00:00:00",
+    "dataDeValidade": "2023-12-25T00:00:00",
     "descricao": "Arroz",
     "valor": 13.50
 }
 
 ###
 
-PUT HTTP://localhost:8080/apicrud/produtos/2
+PUT HTTP://localhost:8080/apicrud/produtos/3
 Content-Type: application/json
 
 {
-    "categoria": "Fármaco",
-    "dataDeValidade": "2023-12-18T00:00:00",
-    "descricao": "Dorflex",
+    "dataDeValidade": "2023-12-20T00:00:00",
+    "descricao": "Feijão",
     "valor": 15.50
 }
 
 ###
 
-DELETE HTTP://localhost:8080/apicrud/produtos/1
+DELETE HTTP://localhost:8080/apicrud/produtos/2

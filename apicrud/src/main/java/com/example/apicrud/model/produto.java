@@ -1,25 +1,32 @@
 package com.example.apicrud.model;
 
 import java.util.Date;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
 
 @Entity
 public class Produto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_produto")
     private Long id;
 
     @Column(nullable = false)
     private String descricao;
 
-    @Column(nullable = false)
-    private String categoria;
+    @OneToMany(mappedBy = "produto")
+    @JsonManagedReference
+    private List<Categoria> categoria;
 
     @Column(nullable = false)
     private Date dataDeValidade;
@@ -27,7 +34,6 @@ public class Produto {
     @Column(nullable = false)
     private double valor;
 
-    
     public Long getId() {
         return id;
     }
@@ -44,11 +50,11 @@ public class Produto {
         this.descricao = descricao;
     }
 
-    public String getCategoria() {
+    public List<Categoria> getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(List<Categoria> categoria) {
         this.categoria = categoria;
     }
 
@@ -67,4 +73,6 @@ public class Produto {
     public void setValor(double valor) {
         this.valor = valor;
     }
+
+    
 }
