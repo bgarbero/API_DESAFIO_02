@@ -10,8 +10,7 @@ POST HTTP://localhost:8080/apicrud/clientes
 Content-Type: application/json
 
 {
-    "descricao": "Leci",
-    "endereco": "Apartamento",
+    "descricao": "Bruno",
     "telefone": "992049499"
 }
 
@@ -22,7 +21,6 @@ Content-Type: application/json
 
 {
     "descricao": "Bruno da Silva",
-    "endereco": "Casa",
     "telefone": "24525777"
 }
 

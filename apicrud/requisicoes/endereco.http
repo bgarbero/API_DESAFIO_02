@@ -13,8 +13,10 @@ Content-Type: application/json
     "bairro": "Benfica",
     "cep": "27600000",
     "cidade": "Valença",
-    "cliente": "Cintia",
-    "complemento": "Casa 2",
+    "cliente": {
+        "id": 1
+    },
+    "complemento": "Casa 1",
     "descricao": "Casa",
     "estado": "RJ",
     "numero": "99",
@@ -32,7 +34,7 @@ Content-Type: application/json
     "cidade": "Valença",
     "cliente": "Bruno da Silva",
     "complemento": "Nenhum",
-    "descricao": "Casa",
+    "descricao": "Casa 1",
     "estado": "RJ",
     "numero": "99",
     "rua": "Américo Pereira"
@@ -40,4 +42,4 @@ Content-Type: application/json
 
 ###
 
-DELETE HTTP://localhost:8080/apicrud/enderecos/5
+DELETE HTTP://localhost:8080/apicrud/enderecos/2
