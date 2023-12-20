@@ -2,7 +2,7 @@ GET HTTP://localhost:8080/apicrud/clientes
 
 ###
 
-GET HTTP://localhost:8080/apicrud/clientes/1
+GET HTTP://localhost:8080/apicrud/clientes/2
 
 ###
 

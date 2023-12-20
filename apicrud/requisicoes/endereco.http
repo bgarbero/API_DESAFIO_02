@@ -12,9 +12,9 @@ Content-Type: application/json
 {
     "bairro": "Benfica",
     "cep": "27600000",
-    "cidade": "Valença",
+    "cidade": "Vassouras",
     "cliente": {
-        "id": 1
+        "id": 2
     },
     "complemento": "Casa 1",
     "descricao": "Casa",

@@ -12,7 +12,7 @@ Content-Type: application/json
 {
     "descricao": "Alimento",
     "produto": {
-        "id": 3
+        "id": 2
     }
 }
 
@@ -28,6 +28,6 @@ Content-Type: application/json
     }
 }
 
-###
 
-DELETE HTTP://localhost:8080/apicrud/categorias/1
+###
+DELETE HTTP://localhost:8080/apicrud/categorias/4

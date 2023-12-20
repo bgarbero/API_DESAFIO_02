@@ -2,7 +2,7 @@ GET HTTP://localhost:8080/apicrud/produtos
 
 ###
 
-GET HTTP://localhost:8080/apicrud/produtos/3
+GET HTTP://localhost:8080/apicrud/produtos/2
 
 ###
 
@@ -10,14 +10,14 @@ POST HTTP://localhost:8080/apicrud/produtos
 Content-Type: application/json
 
 {
-    "dataDeValidade": "2023-12-25T00:00:00",
+    "dataDeValidade": "2023-12-20T00:00:00",
     "descricao": "Arroz",
-    "valor": 13.50
+    "valor": 14.50
 }
 
 ###
 
-PUT HTTP://localhost:8080/apicrud/produtos/3
+PUT HTTP://localhost:8080/apicrud/produtos/1
 Content-Type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-Type: application/json
 
 ###
 
-DELETE HTTP://localhost:8080/apicrud/produtos/2
+DELETE HTTP://localhost:8080/apicrud/produtos/1
